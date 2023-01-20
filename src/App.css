@@ -1,38 +1,69 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-size: 20px;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(224, 78, 72);
   color: white;
+  height: 100px;
+  position: sticky;
+  top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar > h1 {
+  font-weight: normal;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar > img {
+  margin-right: 10px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 150px;
+}
+
+.card {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+  border-bottom: 3px solid rgb(245, 245, 245);
+}
+
+.card > img {
+  width: 20%;
+  max-width: 170px;
+  object-fit: cover;
+  padding: 20px 0;
+  /* max-height: 150px; */
+}
+
+.card-text {
+  padding: 20px;
+}
+
+.card-text-header {
+  display: flex;
+  align-items: center;
+}
+
+.card-text-header > h5 {
+  margin: 0;
+  margin-right: 20px;
+  color: gray;
+}
+
+.card-text-header > a {
+  color: rgb(196, 196, 196);
 }
