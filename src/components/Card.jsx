@@ -8,7 +8,7 @@ export default function Card(props) {
         <div className="card-text-header">
           <img src="location.png" alt="location" />
           <h5>{props.attraction.location.toUpperCase()}</h5>
-          <a href={props.attraction.googleMapsUrl} target="_blank">View on Google Maps</a>
+          <a href={props.attraction.googleMapsUrl} target="_blank" rel="noreferrer">View on Google Maps</a>
         </div>
         <h2>{props.attraction.title}</h2>
         <p><strong>{props.attraction.startDate} - {props.attraction.endDate}</strong></p>
